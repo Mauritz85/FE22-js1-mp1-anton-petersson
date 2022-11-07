@@ -35,10 +35,10 @@ const tabelldiv3 = document.createElement("div");
 maindiv.appendChild(tabelldiv3)
 tabelldiv3.style.border = "10px solid hsl(245, 100%, 85%)";
 
-const tabell1 =  [0, 1, 2, 3, 4, 5, 6, 7 ,8, 9]
-for(let e=0; e<tabell1.length; e++){
+
+for(let e=0; e<=9; e++){
     const radText = document.createElement('p')
-    radText.innerText = tabell1[e];
+    radText.innerText = [e];
     tabelldiv1.appendChild(radText);
     tabelldiv1.style.width = "50px"
     radText.style.margin = "0px"
@@ -54,10 +54,9 @@ for(let e=0; e<tabell1.length; e++){
 
 }
 
-const tabell2 =  [0, 1, 2, 3, 4, 5, 6, 7 ,8, 9]
-for(let e = tabell2.length - 1; e >= 0; e--){
+for(let e = 10 - 1; e >= 0; e--){
     const radText = document.createElement('p')
-    radText.innerText = tabell2[e];
+    radText.innerText = [e];
     tabelldiv2.appendChild(radText)
     tabelldiv2.style.width = "50px"
     radText.style.margin = "0px"
@@ -74,7 +73,7 @@ for(let e = tabell2.length - 1; e >= 0; e--){
 }
 
 const tabell3 =  ['ett', 'två', 'tre', 'fyra', 'fem', 'sex', 'sju', 'åtta' ,'nio','tio']
-for(let e=0; e<tabell1.length; e++){
+for(let e=0; e<tabell3.length; e++){
     const radText = document.createElement('p')
     radText.innerText = tabell3[e];
     tabelldiv3.appendChild(radText)
